@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #171b19;
+}
+
+:root {
+    --negro: #171b19;
+    --verde: #b7f36b;
+    --gris: #f2f4f0;
+    --blanco: #ffffff;
+}
+
+header {
+    background-color: var(--negro);
+}
+.navbar {
+    padding: 20px 0;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.navbar-brand span,
+footer span {
+    color: var(--verde) !important;
+}
+
+.btn-go {
+    background-color: var(--verde);
+    color: var(--negro);
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+}
+.btn-go:hover {
+    background-color: #a1df55;
+    color: var(--negro);
+}
+
+.hero {
+    background-color: var(--negro);
+    color: white;
+    padding: 90px 0;
+}
+.etiqueta {
+    color: #9ddc56;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.hero h1 {
+    font-size: clamp (40px, 6vw, 68px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+.hero h1 span {
+    color: var(--verde);
+}
+.hero-text {
+    color: #d0d0d0;
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+.hero-image {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.section {
+    padding: 85px 0;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.section-heading h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+.section-heading p {
+    color: #777;
+}
+
+.discipline-card {
+    background-color: var(--gris);
+    padding: 35px 25px;
+    border-radius: 12px;
+    height: 100%;
+    border-bottom: 4px solid var(--verde);
+    transition: 0.3s;
+}
+.discipline-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+.discipline-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+.discipline-card p {
+    color: #666;
+    margin-top: 12px;
+}
+
+
+.section-dark {
+    background-color: var(--negro);
+    color: white;
+}
+.section-dark .section-heading p {
+    color: #cccccc;
+}
+.search-box {
+    background-color: white;
+    color: var(--negro);
+    padding: 30px;
+    border-radius: 12px;
+}
+.search-box label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.step-card {
+    background-color: var(--gris);
+    padding: 30px 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+.step-card span {
+    font-size: 35px;
+    font-weight: 800;
+    color: #83bd43
+}
+.step-card h3 {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+
+.trainer-section {
+    background-color: var(--gris);
+}
+.trainer-section h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+footer {
+    background-color: var(--negro);
+    color: white;
+    padding: 45px 0;
+    text-align: center;
+}
+footer h3 {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+footer p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 55px 0;
+    }
+    .hero h1 {
+        font-size: 42px;
+    }
+    .hero-image {
+        margin-top: 35px;
+        height: 280px;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    .section-heading h2 {
+        font-size: 28px;
+    }
+    .search-box {
+        padding: 20px;
+    }
+}
